@@ -32,12 +32,31 @@
 //- (id) action
 - (void) drawInContext:(CGContextRef)ctx {
     
+    CGContextTranslateCTM(ctx, 0.0, self.bounds.size.height);
+    CGContextScaleCTM(ctx, 1.0, -1.0);
+    
     // Prepare Draw
     CGRect circleRect = self.bounds;
     CGFloat radius = CGRectGetMidX(circleRect);
     CGPoint center = CGPointMake(radius, CGRectGetMidY(circleRect));
     CGFloat startAngle = self.shift * 2 * M_PI;
     CGFloat endAngle = self.percentage * 2 * M_PI + startAngle;
+
+    // Set Color
+    CGContextSetFillColorWithColor(ctx, self.borderColor);
+    
+    // Draw Start time
+    NSString *text = [NSString stringWithFormat:@"%d", (int)(self.shift * 24)];
+    
+    CGContextSelectFont( ctx, "Helvetica", 15, kCGEncodingFontSpecific);
+    CGContextSetTextDrawingMode(ctx, kCGTextFill);
+    
+    CGFloat textX = cosf(startAngle) * (radius + 8) + center.x;
+    CGFloat textY = sinf(startAngle) * (radius + 8) + center.y;
+    
+    CGAffineTransform myTextTransform =  CGAffineTransformMakeRotation  (startAngle);
+    CGContextSetTextMatrix (ctx, myTextTransform);
+    CGContextShowTextAtPoint (ctx, textX, textY, [text UTF8String], strlen([text UTF8String]));
     
     // Draw Night
     CGContextSetFillColorWithColor(ctx, self.borderColor);
@@ -45,6 +64,16 @@
     CGContextAddArc(ctx, center.x, center.y, radius, startAngle, endAngle, 0);
     CGContextClosePath(ctx);
     CGContextFillPath(ctx); 
+    
+    // Draw End time
+    text = [NSString stringWithFormat:@"%d", (int)((self.shift + self.percentage)  * 24)];
+    
+    textX = cosf(endAngle) * (radius + 8) + center.x;
+    textY = sinf(endAngle) * (radius + 8) + center.y;
+    
+    myTextTransform =  CGAffineTransformMakeRotation  (endAngle);
+    CGContextSetTextMatrix (ctx, myTextTransform);
+    CGContextShowTextAtPoint (ctx, textX, textY, [text UTF8String], strlen([text UTF8String]));
     
     [super drawInContext:ctx];
 }

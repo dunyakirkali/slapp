@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91CFF29153EFB7400B5C387 /* Biphasic.svg in Resources */ = {isa = PBXBuildFile; fileRef = B91CFF26153EFB7400B5C387 /* Biphasic.svg */; };
+		B91CFF2A153EFB7400B5C387 /* Dymaxion.svg in Resources */ = {isa = PBXBuildFile; fileRef = B91CFF27153EFB7400B5C387 /* Dymaxion.svg */; };
+		B91CFF2B153EFB7400B5C387 /* Uberman.svg in Resources */ = {isa = PBXBuildFile; fileRef = B91CFF28153EFB7400B5C387 /* Uberman.svg */; };
 		B95339C2153E5B86003F6C97 /* Everyman.svg in Resources */ = {isa = PBXBuildFile; fileRef = B95339C1153E5B86003F6C97 /* Everyman.svg */; };
 		B981DBAE153D818C00552227 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBAD153D818C00552227 /* UIKit.framework */; };
 		B981DBB0153D818C00552227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBAF153D818C00552227 /* Foundation.framework */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B91CFF26153EFB7400B5C387 /* Biphasic.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Biphasic.svg; path = ../../../../slapp/Slapp/Resources/Schedules/Biphasic.svg; sourceTree = "<group>"; };
+		B91CFF27153EFB7400B5C387 /* Dymaxion.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Dymaxion.svg; path = ../../../../slapp/Slapp/Resources/Schedules/Dymaxion.svg; sourceTree = "<group>"; };
+		B91CFF28153EFB7400B5C387 /* Uberman.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Uberman.svg; path = ../../../../slapp/Slapp/Resources/Schedules/Uberman.svg; sourceTree = "<group>"; };
 		B95339C1153E5B86003F6C97 /* Everyman.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Everyman.svg; sourceTree = "<group>"; };
 		B981DBA9153D818C00552227 /* Slapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B981DBAD153D818C00552227 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +92,9 @@
 		B90E3962153E485400513232 /* Schedules */ = {
 			isa = PBXGroup;
 			children = (
+				B91CFF26153EFB7400B5C387 /* Biphasic.svg */,
+				B91CFF27153EFB7400B5C387 /* Dymaxion.svg */,
+				B91CFF28153EFB7400B5C387 /* Uberman.svg */,
 				B95339C1153E5B86003F6C97 /* Everyman.svg */,
 				B99A5E5F153E550700D4CFC6 /* Monophasic.svg */,
 			);
@@ -277,6 +286,9 @@
 				B9A8DBC5153DC77E00A985F9 /* clock_overlay.png in Resources */,
 				B99A5E60153E550700D4CFC6 /* Monophasic.svg in Resources */,
 				B95339C2153E5B86003F6C97 /* Everyman.svg in Resources */,
+				B91CFF29153EFB7400B5C387 /* Biphasic.svg in Resources */,
+				B91CFF2A153EFB7400B5C387 /* Dymaxion.svg in Resources */,
+				B91CFF2B153EFB7400B5C387 /* Uberman.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,8 +31,12 @@
 
     self.locationMeasurements = [NSMutableArray array];
     self.schedules = [NSMutableArray array];
-    [schedules addObject:@"Everyman"];
     [schedules addObject:@"Monophasic"];
+    [schedules addObject:@"Biphasic"];
+    [schedules addObject:@"Everyman"];
+    [schedules addObject:@"Dymaxion"];    
+    [schedules addObject:@"Uberman"];
+    
     
     [self performSelector:@selector(initLocationManager) withObject:nil afterDelay:0.5];    
     
@@ -242,6 +246,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [workPie setNeedsDisplay];
+    [pie setNeedsDisplay];
 }
 
 
