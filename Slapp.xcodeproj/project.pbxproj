@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B95339C2153E5B86003F6C97 /* Everyman.svg in Resources */ = {isa = PBXBuildFile; fileRef = B95339C1153E5B86003F6C97 /* Everyman.svg */; };
+		B981DBAE153D818C00552227 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBAD153D818C00552227 /* UIKit.framework */; };
+		B981DBB0153D818C00552227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBAF153D818C00552227 /* Foundation.framework */; };
+		B981DBB2153D818C00552227 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBB1153D818C00552227 /* CoreGraphics.framework */; };
+		B981DBB8153D818C00552227 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B981DBB6153D818C00552227 /* Localizable.strings */; };
+		B981DBBA153D818C00552227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B981DBB9153D818C00552227 /* main.m */; };
+		B981DBBE153D818C00552227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B981DBBD153D818C00552227 /* AppDelegate.m */; };
+		B981DBC1153D818C00552227 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B981DBBF153D818C00552227 /* MainStoryboard.storyboard */; };
+		B981DBC4153D818C00552227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981DBC3153D818C00552227 /* ViewController.m */; };
+		B981DBD9153D81F100552227 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = B981DBD8153D81F100552227 /* PieView.m */; };
+		B981DBDF153D962700552227 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B981DBDE153D962700552227 /* QuartzCore.framework */; };
+		B99A5E60153E550700D4CFC6 /* Monophasic.svg in Resources */ = {isa = PBXBuildFile; fileRef = B99A5E5F153E550700D4CFC6 /* Monophasic.svg */; };
+		B9A8DB7A153DA9FE00A985F9 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A8DB79153DA9FE00A985F9 /* clouds.png */; };
+		B9A8DBBC153DBF4D00A985F9 /* MathAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBA8153DBF4D00A985F9 /* MathAdditions.c */; };
+		B9A8DBBD153DBF4D00A985F9 /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBAC153DBF4D00A985F9 /* AstronomicalCalculator.m */; };
+		B9A8DBBE153DBF4D00A985F9 /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBAE153DBF4D00A985F9 /* AstronomicalCalendar.m */; };
+		B9A8DBBF153DBF4D00A985F9 /* EarthViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBB0153DBF4D00A985F9 /* EarthViewer.m */; };
+		B9A8DBC0153DBF4D00A985F9 /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBB2153DBF4D00A985F9 /* GeoLocation.m */; };
+		B9A8DBC1153DBF4D00A985F9 /* SunriseAndSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A8DBB4153DBF4D00A985F9 /* SunriseAndSunset.m */; };
+		B9A8DBC5153DC77E00A985F9 /* clock_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A8DBC4153DC77E00A985F9 /* clock_overlay.png */; };
+		B9A8DBCE153DD4C800A985F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A8DBCD153DD4C800A985F9 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B95339C1153E5B86003F6C97 /* Everyman.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Everyman.svg; sourceTree = "<group>"; };
+		B981DBA9153D818C00552227 /* Slapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B981DBAD153D818C00552227 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B981DBAF153D818C00552227 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B981DBB1153D818C00552227 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B981DBB5153D818C00552227 /* Slapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Slapp-Info.plist"; sourceTree = "<group>"; };
+		B981DBB7153D818C00552227 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B981DBB9153D818C00552227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B981DBBB153D818C00552227 /* Slapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Slapp-Prefix.pch"; sourceTree = "<group>"; };
+		B981DBBC153D818C00552227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B981DBBD153D818C00552227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B981DBC0153D818C00552227 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B981DBC2153D818C00552227 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B981DBC3153D818C00552227 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B981DBD7153D81F100552227 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		B981DBD8153D81F100552227 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		B981DBDE153D962700552227 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B99A5E5F153E550700D4CFC6 /* Monophasic.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Monophasic.svg; sourceTree = "<group>"; };
+		B9A8DB79153DA9FE00A985F9 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
+		B9A8DBA7153DBF4D00A985F9 /* KosherCocoaConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoaConstants.h; sourceTree = "<group>"; };
+		B9A8DBA8153DBF4D00A985F9 /* MathAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MathAdditions.c; sourceTree = "<group>"; };
+		B9A8DBA9153DBF4D00A985F9 /* MathAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathAdditions.h; sourceTree = "<group>"; };
+		B9A8DBAB153DBF4D00A985F9 /* AstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalCalculator.h; sourceTree = "<group>"; };
+		B9A8DBAC153DBF4D00A985F9 /* AstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalCalculator.m; sourceTree = "<group>"; };
+		B9A8DBAD153DBF4D00A985F9 /* AstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalCalendar.h; sourceTree = "<group>"; };
+		B9A8DBAE153DBF4D00A985F9 /* AstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalCalendar.m; sourceTree = "<group>"; };
+		B9A8DBAF153DBF4D00A985F9 /* EarthViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthViewer.h; sourceTree = "<group>"; };
+		B9A8DBB0153DBF4D00A985F9 /* EarthViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthViewer.m; sourceTree = "<group>"; };
+		B9A8DBB1153DBF4D00A985F9 /* GeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocation.h; sourceTree = "<group>"; };
+		B9A8DBB2153DBF4D00A985F9 /* GeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocation.m; sourceTree = "<group>"; };
+		B9A8DBB3153DBF4D00A985F9 /* SunriseAndSunset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunriseAndSunset.h; sourceTree = "<group>"; };
+		B9A8DBB4153DBF4D00A985F9 /* SunriseAndSunset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunriseAndSunset.m; sourceTree = "<group>"; };
+		B9A8DBC4153DC77E00A985F9 /* clock_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_overlay.png; sourceTree = "<group>"; };
+		B9A8DBCD153DD4C800A985F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B981DBA6153D818C00552227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A8DBCE153DD4C800A985F9 /* CoreLocation.framework in Frameworks */,
+				B981DBDF153D962700552227 /* QuartzCore.framework in Frameworks */,
+				B981DBAE153D818C00552227 /* UIKit.framework in Frameworks */,
+				B981DBB0153D818C00552227 /* Foundation.framework in Frameworks */,
+				B981DBB2153D818C00552227 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B90E3962153E485400513232 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				B95339C1153E5B86003F6C97 /* Everyman.svg */,
+				B99A5E5F153E550700D4CFC6 /* Monophasic.svg */,
+			);
+			name = Schedules;
+			path = Resources/Schedules;
+			sourceTree = "<group>";
+		};
+		B981DB9E153D818C00552227 = {
+			isa = PBXGroup;
+			children = (
+				B981DBB3153D818C00552227 /* Slapp */,
+				B981DBAC153D818C00552227 /* Frameworks */,
+				B981DBAA153D818C00552227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B981DBAA153D818C00552227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B981DBA9153D818C00552227 /* Slapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B981DBAC153D818C00552227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBCD153DD4C800A985F9 /* CoreLocation.framework */,
+				B981DBDE153D962700552227 /* QuartzCore.framework */,
+				B981DBAD153D818C00552227 /* UIKit.framework */,
+				B981DBAF153D818C00552227 /* Foundation.framework */,
+				B981DBB1153D818C00552227 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B981DBB3153D818C00552227 /* Slapp */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DB7B153DBEDD00A985F9 /* Libraries */,
+				B9A8DB76153DA9EC00A985F9 /* Resources */,
+				B981DBD5153D81D000552227 /* Views */,
+				B981DBBC153D818C00552227 /* AppDelegate.h */,
+				B981DBBD153D818C00552227 /* AppDelegate.m */,
+				B981DBBF153D818C00552227 /* MainStoryboard.storyboard */,
+				B981DBC2153D818C00552227 /* ViewController.h */,
+				B981DBC3153D818C00552227 /* ViewController.m */,
+				B981DBB4153D818C00552227 /* Supporting Files */,
+			);
+			path = Slapp;
+			sourceTree = "<group>";
+		};
+		B981DBB4153D818C00552227 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B981DBB5153D818C00552227 /* Slapp-Info.plist */,
+				B981DBB6153D818C00552227 /* Localizable.strings */,
+				B981DBB9153D818C00552227 /* main.m */,
+				B981DBBB153D818C00552227 /* Slapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B981DBD5153D81D000552227 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B981DBD7153D81F100552227 /* PieView.h */,
+				B981DBD8153D81F100552227 /* PieView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B9A8DB76153DA9EC00A985F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B90E3962153E485400513232 /* Schedules */,
+				B9A8DB78153DA9FE00A985F9 /* GUI */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B9A8DB78153DA9FE00A985F9 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBC4153DC77E00A985F9 /* clock_overlay.png */,
+				B9A8DB79153DA9FE00A985F9 /* clouds.png */,
+			);
+			name = GUI;
+			path = Resources/GUI;
+			sourceTree = "<group>";
+		};
+		B9A8DB7B153DBEDD00A985F9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBA0153DBF4D00A985F9 /* KosherCocoa */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B9A8DBA0153DBF4D00A985F9 /* KosherCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBA6153DBF4D00A985F9 /* Required */,
+				B9A8DBAA153DBF4D00A985F9 /* Times */,
+			);
+			path = KosherCocoa;
+			sourceTree = "<group>";
+		};
+		B9A8DBA6153DBF4D00A985F9 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBA7153DBF4D00A985F9 /* KosherCocoaConstants.h */,
+				B9A8DBA8153DBF4D00A985F9 /* MathAdditions.c */,
+				B9A8DBA9153DBF4D00A985F9 /* MathAdditions.h */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		B9A8DBAA153DBF4D00A985F9 /* Times */ = {
+			isa = PBXGroup;
+			children = (
+				B9A8DBAB153DBF4D00A985F9 /* AstronomicalCalculator.h */,
+				B9A8DBAC153DBF4D00A985F9 /* AstronomicalCalculator.m */,
+				B9A8DBAD153DBF4D00A985F9 /* AstronomicalCalendar.h */,
+				B9A8DBAE153DBF4D00A985F9 /* AstronomicalCalendar.m */,
+				B9A8DBAF153DBF4D00A985F9 /* EarthViewer.h */,
+				B9A8DBB0153DBF4D00A985F9 /* EarthViewer.m */,
+				B9A8DBB1153DBF4D00A985F9 /* GeoLocation.h */,
+				B9A8DBB2153DBF4D00A985F9 /* GeoLocation.m */,
+				B9A8DBB3153DBF4D00A985F9 /* SunriseAndSunset.h */,
+				B9A8DBB4153DBF4D00A985F9 /* SunriseAndSunset.m */,
+			);
+			path = Times;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B981DBA8153D818C00552227 /* Slapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B981DBC7153D818C00552227 /* Build configuration list for PBXNativeTarget "Slapp" */;
+			buildPhases = (
+				B981DBA5153D818C00552227 /* Sources */,
+				B981DBA6153D818C00552227 /* Frameworks */,
+				B981DBA7153D818C00552227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Slapp;
+			productName = Slapp;
+			productReference = B981DBA9153D818C00552227 /* Slapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B981DBA0153D818C00552227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B981DBA3153D818C00552227 /* Build configuration list for PBXProject "Slapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B981DB9E153D818C00552227;
+			productRefGroup = B981DBAA153D818C00552227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B981DBA8153D818C00552227 /* Slapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B981DBA7153D818C00552227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B981DBB8153D818C00552227 /* Localizable.strings in Resources */,
+				B981DBC1153D818C00552227 /* MainStoryboard.storyboard in Resources */,
+				B9A8DB7A153DA9FE00A985F9 /* clouds.png in Resources */,
+				B9A8DBC5153DC77E00A985F9 /* clock_overlay.png in Resources */,
+				B99A5E60153E550700D4CFC6 /* Monophasic.svg in Resources */,
+				B95339C2153E5B86003F6C97 /* Everyman.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B981DBA5153D818C00552227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B981DBBA153D818C00552227 /* main.m in Sources */,
+				B981DBBE153D818C00552227 /* AppDelegate.m in Sources */,
+				B981DBC4153D818C00552227 /* ViewController.m in Sources */,
+				B981DBD9153D81F100552227 /* PieView.m in Sources */,
+				B9A8DBBC153DBF4D00A985F9 /* MathAdditions.c in Sources */,
+				B9A8DBBD153DBF4D00A985F9 /* AstronomicalCalculator.m in Sources */,
+				B9A8DBBE153DBF4D00A985F9 /* AstronomicalCalendar.m in Sources */,
+				B9A8DBBF153DBF4D00A985F9 /* EarthViewer.m in Sources */,
+				B9A8DBC0153DBF4D00A985F9 /* GeoLocation.m in Sources */,
+				B9A8DBC1153DBF4D00A985F9 /* SunriseAndSunset.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B981DBB6153D818C00552227 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B981DBB7153D818C00552227 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B981DBBF153D818C00552227 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B981DBC0153D818C00552227 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B981DBC5153D818C00552227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B981DBC6153D818C00552227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B981DBC8153D818C00552227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Slapp/Slapp-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
+				INFOPLIST_FILE = "Slapp/Slapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Slapp/Resources/Schedules/Downloads/Google Analytics SDK/Library\"",
+					"\"$(SRCROOT)/Slapp/Resources/Schedules/Downloads/TestFlightSDK1.0\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B981DBC9153D818C00552227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Slapp/Slapp-Prefix.pch";
+				INFOPLIST_FILE = "Slapp/Slapp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Slapp/Resources/Schedules/Downloads/Google Analytics SDK/Library\"",
+					"\"$(SRCROOT)/Slapp/Resources/Schedules/Downloads/TestFlightSDK1.0\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B981DBA3153D818C00552227 /* Build configuration list for PBXProject "Slapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B981DBC5153D818C00552227 /* Debug */,
+				B981DBC6153D818C00552227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B981DBC7153D818C00552227 /* Build configuration list for PBXNativeTarget "Slapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B981DBC8153D818C00552227 /* Debug */,
+				B981DBC9153D818C00552227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B981DBA0153D818C00552227 /* Project object */;
+}
