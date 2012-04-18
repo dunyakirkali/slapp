@@ -18,10 +18,11 @@
 @implementation ViewController
 
 @synthesize pie, workPie, schedulePie;
-@synthesize datePicker;
+@synthesize datePicker, schedulePicker;
 @synthesize locationManager, locationMeasurements, bestEffortAtLocation;
 @synthesize descriptionLabel;
 @synthesize stateString;
+@synthesize schedules;
 
 - (void)viewDidLoad
 {
@@ -29,20 +30,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     self.locationMeasurements = [NSMutableArray array];
+    self.schedules = [NSMutableArray array];
+    [schedules addObject:@"Everyman"];
+    [schedules addObject:@"Monophasic"];
+    
     [self performSelector:@selector(initLocationManager) withObject:nil afterDelay:0.5];    
-    
-
-    //
-    NSString *urlAddress = @"http://upload.wikimedia.org/wikipedia/commons/3/32/Everyman.svg";
-    
-    //Create a URL object.
-    NSURL *url = [NSURL URLWithString:urlAddress];
-    
-    //URL Requst Object
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    //Load the request in the UIWebView.
-    [schedulePie loadRequest:requestObj];
     
     [self updateWorkPie];
 }
@@ -211,6 +203,40 @@
 }
 
 #pragma mark -
+#pragma mark Schedule Picker
+
+//PickerViewController.m
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
+    
+    return 1;
+}
+
+
+- (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    return [schedules count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [schedules objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    NSString *urlAddress = [[NSBundle mainBundle] pathForResource:[schedules objectAtIndex:row] ofType:@"svg"];
+    
+    NSLog(@"urlAddress %@", urlAddress);
+    //Create a URL object.
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    
+    //URL Requst Object
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    //Load the request in the UIWebView.
+    [schedulePie loadRequest:requestObj];
+}
+
+#pragma mark -
 #pragma mark Rotation
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -220,6 +246,7 @@
 
 
 - (void) dealloc {
+    [schedulePicker release];
     [schedulePie release];
     [workPie release];
     [stateString release];

@@ -11,12 +11,15 @@
 
 @class PieView;
 
-@interface ViewController : UIViewController<CLLocationManagerDelegate> {
+@interface ViewController : UIViewController<CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
     
     PieView             *pie;
     PieView             *workPie;
-    UIWebView             *schedulePie;    
+    UIWebView           *schedulePie;    
     UIDatePicker        *datePicker;
+    
+    UIPickerView        *schedulePicker;
+    NSMutableArray      *schedules;
     
     CLLocationManager   *locationManager;
     NSMutableArray      *locationMeasurements;
@@ -27,6 +30,8 @@
 
 }
 
+@property( nonatomic, retain) NSMutableArray            *schedules;
+@property (nonatomic, retain) IBOutlet UIPickerView     *schedulePicker;
 @property (nonatomic, retain) NSString                  *stateString;
 @property (nonatomic, retain) IBOutlet PieView          *pie;
 @property (nonatomic, retain) IBOutlet PieView          *workPie;
